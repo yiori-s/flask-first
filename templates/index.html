@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Flask test</h1>
+{% for num in nums%}
+	{{ num }}
+{% endfor %}
+{{ dict.a }} {{dict.b}}
+<h2> {{ body }} </h2>
+<form method="post" action="/">
+	<input type="text" name="message">
+	<input type="submit" value="Send">
+</form>
+{% endblock %}
