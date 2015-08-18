@@ -10,4 +10,4 @@ def index():
 		return render_template('index.html',title="Flask test GET", body="Welcome", nums=[0,1,2], dict={'a':3, 'b':4})
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run()
